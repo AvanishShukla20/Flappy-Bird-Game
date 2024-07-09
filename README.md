@@ -1,5 +1,5 @@
 Flappy- Bird Game :
-Flappy Bird hooks players with its simple yet irresistible gameplay. You fly a bird through pipes without crashing. This project shows how basic web tech can create fun interactive games.
+Flappy Bird is a simple yet Exciting Fun Gameplay. You fly a bird through pipes without crashing. This project shows how basic web tech can create fun interactive games.
 
 Features :
 •	Simple and intuitive gameplay
