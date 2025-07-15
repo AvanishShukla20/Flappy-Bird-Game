@@ -36,7 +36,7 @@ let bottomPipeImg;
 
 //moving the pipes
 
-let velocityX = -2; // pipes moving to left
+let velocityX = -2; // pipes moving to left (increased speed)
 let velocityY = 0; // bird jump speed
 let gravity = 0.4;
 
@@ -113,7 +113,7 @@ function update() {
 
             if(!pipe.passed && bird.x > pipe.x + pipe.width)
             {
-                score += 0.5; // 0.5 because there are two pipes
+                score += 5; // 0.5 because there are two pipes
                 pipe.passed = true;
             }
 
@@ -151,7 +151,7 @@ function placePipes() {
         
     let randomPipeY = pipeY - pipeHeight/4 - Math.random()*(pipeHeight/2);
 
-    let openingSpace = board.height/4;
+    let openingSpace = board.height/3;  // Increased space between pipes
 
     // top pipe
     let topPipe = {
@@ -183,7 +183,7 @@ function moveBird(e) {
     if(e.code == "Space" || e.code == "ArrowUp" || e.code == "keyX")
         {
             //jump
-            velocityY = -6;
+            velocityY = -7;  // Increased jump strength
         }
 
         // reset game
